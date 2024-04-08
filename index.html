@@ -10,7 +10,16 @@
 <body>
 
     <div id="app">
-        
+        <div class="header">
+            <h1>10 indirizzi mail casuali:</h1>
+        </div>
+        <div class="main">
+            <ul>
+                <li v-for="(mail,i) in randomMails">
+                    {{ randomMails[i] }}
+                </li>
+            </ul>
+        </div>
     </div>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
